@@ -7,7 +7,8 @@ public class IBANValidation {
     public static void main(String[] args) {
         String testIBANValid = "DE23 6005 0101 1111 2222 33";
         String testIBANInvalid = "DE12 345 678 910 234 567 89";
-        System.out.println(hasValidNumeralsCombination(testIBANInvalid));
+        System.out.println(testIBANValid+ ": is a valid IBAN and the method returns: "  + isValidIBAN(testIBANValid));
+        System.out.println(testIBANInvalid+ ": is an invalid IBAN and the method returns: " + isValidIBAN(testIBANInvalid));
     }
 
     public static boolean isValidIBAN(String iban){
